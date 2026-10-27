@@ -1,0 +1,11 @@
+{
+  "name": "public-transport-analysis",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "source venv/bin/activate && uvicorn api.index:app --reload --port 8000",
+    "generate-data": "source venv/bin/activate && python api/data_generator.py"
+  }
+}
