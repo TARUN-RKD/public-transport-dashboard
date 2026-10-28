@@ -1,10 +1,20 @@
 # 🚇 TransitPulse: Public Transport Ridership Analysis Dashboard
 
-An end-to-end, production-ready public transport analysis dashboard engineered with **Python (FastAPI, Pandas, Matplotlib)** and **React (Vite, Tailwind CSS, Recharts)**, pre-configured for **Google Colab** compatibility and one-click deployment on the **Vercel Free Tier**.
+[![Live Dashboard](https://img.shields.io/badge/Live%20Demo-Vercel%20Production-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://public-transport-dashboard.vercel.app/)
+[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://public-transport-dashboard.vercel.app/api/health)
+[![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://public-transport-dashboard.vercel.app/)
+
+An end-to-end, production-ready public transport analysis dashboard engineered with **Python (FastAPI, Pandas, Matplotlib)** and **React (Vite, Tailwind CSS, Recharts)**, pre-configured for **Google Colab** compatibility and deployed live on **Vercel**.
+
+🔗 **Live Production URL:** [https://public-transport-dashboard.vercel.app/](https://public-transport-dashboard.vercel.app/)  
+🔗 **API Health Endpoint:** [https://public-transport-dashboard.vercel.app/api/health](https://public-transport-dashboard.vercel.app/api/health)
 
 ---
 
 ## 🚀 Live Demo & Architecture Overview
+
+Access the live cloud dashboard anytime at:  
+👉 **[https://public-transport-dashboard.vercel.app/](https://public-transport-dashboard.vercel.app/)**
 
 ```
 public-transport-analysis/

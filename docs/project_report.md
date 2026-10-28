@@ -3,6 +3,10 @@
 ## 1. Executive Summary
 The **Public Transport Ridership Analysis Dashboard** is an end-to-end analytics platform engineered to evaluate urban transit demand, identify bottleneck time windows, assess route distribution efficiency, and model peak versus off-peak commuter behavior. The platform pairs a high-performance **Python FastAPI** backend powered by **Pandas** and **Matplotlib** with a modern, dark-mode **React (Vite) + Tailwind CSS** frontend utilizing **Recharts** for interactive visual discovery.
 
+- **Live Deployment:** [https://public-transport-dashboard.vercel.app/](https://public-transport-dashboard.vercel.app/)
+- **API Health Endpoint:** [https://public-transport-dashboard.vercel.app/api/health](https://public-transport-dashboard.vercel.app/api/health)
+- **GitHub Repository:** [https://github.com/TARUN-RKD/public-transport-dashboard](https://github.com/TARUN-RKD/public-transport-dashboard)
+
 ---
 
 ## 2. Dataset Architecture & Synthetic Generation Methodology

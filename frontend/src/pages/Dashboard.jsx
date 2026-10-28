@@ -139,9 +139,15 @@ export default function Dashboard() {
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-lg font-black tracking-tight text-white">TransitPulse</h1>
-                <span className="text-[10px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-400 border border-blue-500/30 px-2 py-0.5 rounded">
-                  v1.0 Vercel Ready
-                </span>
+                <a
+                  href="https://public-transport-dashboard.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[10px] font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded flex items-center gap-1 hover:bg-emerald-500/30 transition-all"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Live on Vercel
+                </a>
               </div>
               <p className="text-[11px] text-gray-400 hidden sm:block">
                 Public Transport Ridership & Demand Analysis Engine
@@ -234,7 +240,14 @@ export default function Dashboard() {
             <span>Built with FastAPI, Pandas, Matplotlib, Recharts & Tailwind CSS</span>
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-gray-400">Vercel Free Tier Deployment Ready</span>
+            <a
+              href="https://public-transport-dashboard.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-400 hover:text-emerald-300 transition-colors"
+            >
+              public-transport-dashboard.vercel.app
+            </a>
             <span>•</span>
             <span className="text-gray-400">Jupyter / Colab Compatible</span>
           </div>
