@@ -1,8 +1,13 @@
 import axios from 'axios';
 
+// Support .env configurations via Vite (import.meta.env) with clean fallback to relative proxy
+const baseURL = import.meta.env?.VITE_API_BASE_URL || '';
+const apiKey = import.meta.env?.VITE_API_KEY || '';
+
 const api = axios.create({
-  baseURL: '', // Uses Vite proxy in dev & relative path on Vercel deployment
+  baseURL,
   timeout: 30000,
+  headers: apiKey ? { 'x-api-key': apiKey } : {}
 });
 
 export const fetchRoutes = async () => {

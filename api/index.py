@@ -26,6 +26,22 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Load local .env file securely if present (ignored by git)
+env_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
+if os.path.exists(env_file):
+    try:
+        with open(env_file, "r") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, val = line.split("=", 1)
+                    os.environ.setdefault(key.strip(), val.strip())
+    except Exception:
+        pass
+
+ENVIRONMENT = os.getenv("ENVIRONMENT", "production")
+API_KEY = os.getenv("API_KEY", "")
+
 processor = DataProcessor()
 
 @app.get("/api/health")
@@ -34,7 +50,9 @@ def health_check():
     return {
         "status": "healthy",
         "dataset_records": len(df),
-        "engine": "FastAPI + Pandas"
+        "engine": "FastAPI + Pandas",
+        "environment": ENVIRONMENT,
+        "auth_configured": bool(API_KEY)
     }
 
 @app.get("/api/routes")

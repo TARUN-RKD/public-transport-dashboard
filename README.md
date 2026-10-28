@@ -77,7 +77,10 @@ public-transport-analysis/
 ### 2. Clone and Setup Backend
 ```bash
 # Navigate to project directory
-cd public-transport-analysis
+cd public-transport-dashboard
+
+# (Optional) Setup environment variables from template
+cp .env.example .env
 
 # Create and activate Python virtual environment
 python3 -m venv venv
